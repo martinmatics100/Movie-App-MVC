@@ -22,12 +22,12 @@ namespace MovieStoreMvc.Controllers
         {
             var model = new RegistrationModel
             {
-                Email = "admin@gmail.com",
-                Username = "admin",
+                Email = "user@gmail.com",
+                Username = "User",
                 Name = "Ravindra",
                 Password = "Admin@123",
                 PasswordConfirm = "Admin@123",
-                Role = "Admin"
+                Role = "User"
             };
             // if you want to register with user , Change Role="User"
             var result = await authService.RegisterAsync(model);
