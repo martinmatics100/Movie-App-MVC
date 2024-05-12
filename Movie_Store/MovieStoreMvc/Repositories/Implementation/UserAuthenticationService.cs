@@ -58,7 +58,7 @@ namespace MovieStoreMvc.Repositories.Implementation
 
             status.StatusCode = 1;
             status.Message = "You have registered successfully";
-            return status;
+            return status; 
         }
 
 
@@ -95,6 +95,7 @@ namespace MovieStoreMvc.Repositories.Implementation
                 }
                 status.StatusCode = 1;
                 status.Message = "Logged in successfully";
+                return status;
             }
             else if (signInResult.IsLockedOut)
             {
